@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class HomePage {
+  my_name:string = "Хадыженское- лучшее пиво!"
+  my_list:string[] = ["Ляляляляляляляляля", "окакокакокакокак", "оаоаоаоаоао"]
 
   constructor() {}
 
