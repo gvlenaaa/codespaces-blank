@@ -1,0 +1,7 @@
+{
+  "name": "Lenok",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
