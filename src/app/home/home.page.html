@@ -21,5 +21,12 @@
     <ion-label> {{item}} </ion-label>
   </ion-item>
 </ion-list>
+<ion-grid>
+  <ion-row *ngFor="let item of my_Items">
+    <ion-col>{{item.name}}</ion-col>
+    <ion-col>{{item.class}}</ion-col>
+    <ion-col>{{item.cost}}</ion-col>
+  </ion-row>
+</ion-grid>
   </div>
 </ion-content>
