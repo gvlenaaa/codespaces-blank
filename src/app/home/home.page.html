@@ -1,32 +1,40 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-    {{my_name}}
+      {{my_name}}
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  
+  <!-- Три строки ввода -->
+  <ion-item>
+    <ion-input placeholder="Первая строка" [(ngModel)]="input_one"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input placeholder="Вторая строка" [(ngModel)]="input_two"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input placeholder="Третья строка" [(ngModel)]="input_three"></ion-input>
+  </ion-item>
+  <ion-button expand="block" (click)="addExclamationMark()">Добавить восклицательный знак!</ion-button>
+
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-    <ion-list>
-  <ion-item *ngFor="let item of my_list">
-    <ion-label> {{item}} </ion-label>
-  </ion-item>
-</ion-list>
-<ion-grid>
-  <ion-row *ngFor="let item of my_Items">
-    <ion-col>{{item.name}}</ion-col>
-    <ion-col>{{item.class}}</ion-col>
-    <ion-col>{{item.cost}}</ion-col>
-  </ion-row>
-</ion-grid>
-  </div>
+  <ion-grid>
+    <ion-row *ngFor="let item of my_Items">
+      <ion-col>{{item.name}}</ion-col>
+      <ion-col>{{item.class}}</ion-col>
+      <ion-col>{{item.cost}}</ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-list>
+    <ion-item *ngFor="let item of my_list">
+      <ion-label>{{item}}</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
