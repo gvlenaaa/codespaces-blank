@@ -14,19 +14,19 @@ interface Item {
 })
 export class HomePage {
   constructor() {}
-  my_name: string = "Хадыженское- лучшее пиво!";
-  my_list: string[] = ["Ляляляляляляляляля", "окакокакокакокак", "оаоаоаоаоао"];
+  my_name: string = "Рестораны";
+  my_list: string[] = ["Гастрономия", "Качество", "Вкус"];
   my_Items: Item[] = [
-    { name: "Vkusno i grustno", class: 'Pivo', cost: 5600 },
-    { name: "Hochu kushat", class: 'Pizza', cost: 3000 },
-    { name: "Ne pridumala", class: 'Chto-to', cost: 92387498 }
+    { name: "Барвиха", class: 'Киевская 2', cost: 5600 },
+    { name: "Аист", class: 'Арбатская 8', cost: 3000 },
+    { name: "Хачапури и вино", class: 'Тверская 23', cost: 92387498 }
   ];
-  input_one: string = ""
-  input_two: string = ""
+  input_one: string = "Название"
+  input_two: string = "Адрес"
   input_three: number = 0
 
   addExclamationMark(): void {
-    this.my_name += this.input_one; // Добавляем восклицательный знак к значению my_name
+    this.my_name += "!" 
     this.my_Items.push({ name: this.input_one, class: this.input_two, cost: this.input_three })
 
   }
